@@ -1,0 +1,25 @@
+There's 3 - 
+
+1. How they're supervised during training - 
+    - Supervised learning
+    - Unsupervised learning
+    - Semi-supervised learning
+    - Reinforcement learning
+    a few others.....
+
+2. Whether they can learn incrementally on the fly or in batches - 
+    - Online learning
+    - Batch learning
+
+3. Whether they work by simply comparing new data points to known
+data points, or instead by detecting patterns in the training data and
+building a predictive model, much like scientists do (instance-based
+versus model-based learning)
+
+
+NOTE: These criteria are not exclusive; you can combine them in any way you like.
+For example, a state-of-the-art spam filter may learn on the fly using a deep
+neural network model trained using human-provided examples of spam and
+ham; this makes it an online, model-based, supervised learning system.
+
+WE ENDED ON PAGE 34.

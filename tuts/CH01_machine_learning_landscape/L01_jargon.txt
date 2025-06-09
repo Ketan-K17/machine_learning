@@ -1,0 +1,14 @@
+The part of a machine learning system that
+learns and makes predictions is called a model. Neural networks and random forests are examples of models
+
+The examples that the system uses to learn are called the training set. Each training example is called a training instance (or sample).
+
+machine learning can help humans learn. ML models
+can be inspected to see what they have learned (although for some models
+this can be tricky). For instance, once a spam filter has been trained on
+enough spam, it can easily be inspected to reveal the list of words and
+combinations of words that it believes are the best predictors of spam.
+Sometimes this will reveal unsuspected correlations or new trends, and
+thereby lead to a better understanding of the problem. Digging into large
+amounts of data to discover hidden patterns is called data mining, and
+machine learning excels at it.

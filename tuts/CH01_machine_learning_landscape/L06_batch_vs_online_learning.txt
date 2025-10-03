@@ -1,0 +1,15 @@
+Some models can only function when they have been trained using all of the available data. Any new addition to the training set will require retraining the model from scratch. Such models are said to learn using BATCH LEARNING.
+
+This is not ideal in scenarios where data is constantly changing, such as in a stock market prediction model.
+
+Some models, can continue to learn incrementally by feeding it data instances sequentially, one at a time. i.e. they can still function as you keep feeding it data. This is called ONLINE LEARNING.
+
+
+One important parameter of online learning systems is how fast they should
+adapt to changing data: this is called the LEARNING RATE. If you set a high
+learning rate, then your system will rapidly adapt to new data, but it will
+also tend to quickly forget the old data (and you don’t want a spam filter to
+flag only the latest kinds of spam it was shown). Conversely, if you set a
+low learning rate, the system will have more inertia; that is, it will learn
+more slowly, but it will also be less sensitive to noise in the new data or to
+sequences of nonrepresentative data points (outliers).

@@ -1,14 +1,59 @@
-The part of a machine learning system that
-learns and makes predictions is called a model. Neural networks and random forests are examples of models
+# The part of a machine learning system that
+learns and makes predictions is called a MODEL. Neural networks and random forests are examples of models
 
-The examples that the system uses to learn are called the training set. Each training example is called a training instance (or sample).
+# The examples that the system uses to learn are called the TRAINING SET. Each training example is called a TRAINING INSTANCE (or SAMPLE).
 
-machine learning can help humans learn. ML models
+# machine learning can help humans learn. ML models
 can be inspected to see what they have learned (although for some models
 this can be tricky). For instance, once a spam filter has been trained on
 enough spam, it can easily be inspected to reveal the list of words and
 combinations of words that it believes are the best predictors of spam.
 Sometimes this will reveal unsuspected correlations or new trends, and
 thereby lead to a better understanding of the problem. Digging into large
-amounts of data to discover hidden patterns is called data mining, and
+amounts of data to discover hidden patterns is called DATA MINING, and
 machine learning excels at it.
+
+# In supervised learning, the training set you feed to the algorithm includes
+the desired solutions, called LABELS.
+
+# A related task is dimensionality reduction, in which the goal is to simplify
+the data without losing too much information. One way to do this is to
+merge several correlated features into one. For example, a car’s mileage
+may be strongly correlated with its age, so the dimensionality reduction
+algorithm will merge them into one feature that represents the car’s wear
+and tear. This is called FEATURE EXTRACTION. (note that feature extraction is a type of dimensionality reduction; the extraction word is misleading, it's more combination than extraction really)
+
+# Transferring knowledge from one task to another is called TRANSFER LEARNING, and it’s one
+of the most important techniques in machine learning today, especially when using deep
+neural networks (i.e., neural networks composed of many layers of neurons).
+
+# In reinforcement learning, a POLICY
+defines what action the agent should choose when it is in a given situation
+
+# DeepMind’s AlphaGo program is also a good example
+of reinforcement learning: it made the headlines in May 2017 when it beat
+Ke Jie, the number one ranked player in the world at the time, at the game
+of Go. It learned its winning policy by analyzing millions of games, and
+then playing many games against itself. Note that learning was turned off
+during the games against the champion; AlphaGo was just applying the
+policy it had learned. As you will see in the next section, this is called
+OFFLINE LEARNING.
+
+# In BATCH LEARNING, the system is incapable of learning incrementally: it must
+be trained using all the available data. This will generally take a lot of time
+and computing resources, so it is typically done offline. First the system is
+trained, and then it is launched into production and runs without learning
+anymore; it just applies what it has learned. This is called OFFLINE LEARNING.
+
+# In online learning, the system can learn incrementally by feeding it data instances sequentially, one at a time. This means that model can still learn in production.
+
+# Unfortunately, a model’s performance tends to decay slowly over time,
+simply because the world continues to evolve while the model remains
+unchanged. This phenomenon is often called MODEL ROT or DATA DRIFT. The
+solution is to regularly retrain the model on up-to-date data.
+
+
+# online learning algorithms can be used to train models on
+huge datasets that cannot fit in one machine’s main memory (this is called
+OUT-OF-CORE LEARNING). The algorithm loads part of the data, runs a training
+step on that data, and repeats the process until it has run on all of the data.

@@ -1,0 +1,16 @@
+THE UNREASONABLE EFFECTIVENESS OF DATA
+
+In a famous paper published in 2001, Microsoft researchers Michele
+Banko and Eric Brill showed that very different machine learning
+algorithms, including fairly simple ones, performed almost identically
+well on a complex problem of natural language disambiguation once
+they were given enough data (as you can see in Figure 1-21).
+As the authors put it, “these results suggest that we may want to
+reconsider the trade-off between spending time and money on algorithm
+development versus spending it on corpus development”.
+The idea that data matters more than algorithms for complex problems
+was further popularized by Peter Norvig et al. in a paper titled “The
+Unreasonable Effectiveness of Data”, published in 2009. It should be
+noted, however, that small and medium-sized datasets are still very
+common, and it is not always easy or cheap to get extra training data—
+so don’t abandon algorithms just yet.

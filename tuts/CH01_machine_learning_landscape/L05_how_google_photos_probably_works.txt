@@ -1,0 +1,7 @@
+Some photo-hosting services, such as Google Photos, are good examples of
+this. Once you upload all your family photos to the service, it automatically
+recognizes that the same person A shows up in photos 1, 5, and 11, while
+another person B shows up in photos 2, 5, and 7. This is the unsupervised
+part of the algorithm (clustering). Now all the system needs is for you to tell
+it who these people are. Just add one label per person and it is able to name
+everyone in every photo, which is useful for searching photos.

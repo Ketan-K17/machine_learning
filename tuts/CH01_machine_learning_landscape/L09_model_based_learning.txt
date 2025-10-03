@@ -1,0 +1,21 @@
+Before you can use your model, you need to define the parameter values θ
+and θ . How can you know which values will make your model perform
+best? To answer this question, you need to specify a performance measure.
+You can either define a utility function (or fitness function) that measures
+how good your model is, or you can define a cost function that measures
+how bad it is. For linear regression problems, people typically use a cost
+function that measures the distance between the linear model’s predictions
+and the training examples; the objective is to minimize this distance.
+This is where the linear regression algorithm comes in: you feed it your
+training examples, and it finds the parameters that make the linear model fit
+best to your data. This is called training the model
+
+
+
+NOTE: Confusingly, the word “model” can refer to a type of model (e.g., linear regression), to a
+fully specified model architecture (e.g., linear regression with one input and one output),
+or to the final trained model ready to be used for predictions (e.g., linear regression with
+one input and one output, using θ = 3.75 and θ = 6.78 × 10 ). Model selection
+consists in choosing the type of model and fully specifying its architecture. Training a
+model means running an algorithm to find the model parameters that will make it best
+fit the training data, and hopefully make good predictions on new data.
